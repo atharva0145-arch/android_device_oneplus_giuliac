@@ -42,6 +42,10 @@ PRODUCT_PACKAGES += \
 # LiveDisplay
 $(call soong_config_set_bool,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_SE,false)
 
+# OnePlus Settings
+PRODUCT_PACKAGES += \
+    OnePlusSettings
+
 # OPlus Camera
 $(call inherit-product-if-exists, vendor/oplus/camera/giuliac/opluscamera.mk)
 
